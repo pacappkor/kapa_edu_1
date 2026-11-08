@@ -124,7 +124,7 @@ def _package_groups(style):
     while i < len(tokens):
         token = tokens[i]
         i += 1
-        if token not in ('\\RequirePackage', '\\usepackage', '\\string', '\\noexpand', '\\detokenize'):
+        if token not in ('\\RequirePackage', '\\RequirePackageWithOptions', '\\usepackage', '\\string', '\\noexpand', '\\detokenize'):
             continue
         while i < len(tokens) and tokens[i].isspace():
             i += 1
@@ -153,7 +153,7 @@ def _package_groups(style):
 
 
 def preflight_files():
-    """스타일의 RequirePackage/usepackage 옵션·쉼표 목록을 포함한 검사 대상."""
+    """스타일의 RequirePackage/RequirePackageWithOptions/usepackage 옵션·쉼표 목록을 포함한 검사 대상."""
     style = (ROOT / 'latex' / 'kapa-exam.sty').read_text(encoding='utf-8')
     groups = _package_groups(style)
     packages = (name.strip() + '.sty' for group in groups for name in group.split(',') if name.strip())
@@ -196,7 +196,9 @@ def preflight():
         return False
     if missing:
         remedies = '; '.join(f'{name} → tlmgr install {TEXLIVE_PACKAGES[name]}' if name in TEXLIVE_PACKAGES
-                             else f"{name} → tlmgr search --global --file '/{name}'"
+                             else f'{name} → tlmgr search --global --file /{name}'
+                             if re.fullmatch(r'[A-Za-z0-9._-]+', name)
+                             else f'{name!r} → 이 파일 이름으로 tlmgr search --global --file 을 사용해 제공 패키지를 찾으세요'
                              for name in missing)
         print(f'사전 검사 실패: TeX Live 에서 {", ".join(missing)} 을 찾지 못했습니다. '
               f'{remedies}. 다른 패키지도 누락되면 전체 설치(full scheme, tlmgr install scheme-full)를 권장합니다. '

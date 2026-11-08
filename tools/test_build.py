@@ -81,11 +81,29 @@ class PreflightTests(unittest.TestCase):
         self.assertNotIn('<package>', self.err.getvalue())
 
     def test_unknown_resource_lookup_hint(self):
-        with patch.object(build, 'preflight_files', return_value=('unknown.sty',)):
-            self.run.side_effect = lambda cmd, **kw: subprocess.CompletedProcess(cmd, 1, '', '')
-            self.assertFalse(build.preflight())
-        self.assertIn("tlmgr search --global --file '/unknown.sty'", self.err.getvalue())
-        self.assertNotIn('<package>', self.err.getvalue())
+        for name in ('unknown.sty', 'AZaz09._-'):
+            with self.subTest(name=name), patch.object(build, 'preflight_files', return_value=(name,)):
+                self.err.seek(0)
+                self.err.truncate()
+                self.run.side_effect = lambda cmd, **kw: subprocess.CompletedProcess(cmd, 1, '', '')
+                self.assertFalse(build.preflight())
+                self.assertIn(f'{name} → tlmgr search --global --file /{name}.', self.err.getvalue())
+                self.assertNotIn('<package>', self.err.getvalue())
+
+    def test_unsafe_resource_lookup_is_instruction_only(self):
+        for name in ('a+b.sty', 'unknown file.sty', '$HOME.sty', '`whoami`.sty',
+                     'unknown(1).sty', '한글.sty', 'line' + chr(10) + 'break.sty'):
+            with self.subTest(name=name), patch.object(build, 'preflight_files', return_value=(name,)):
+                self.err.seek(0)
+                self.err.truncate()
+                self.run.side_effect = lambda cmd, **kw: subprocess.CompletedProcess(cmd, 1, '', '')
+                self.assertFalse(build.preflight())
+                message = self.err.getvalue()
+                self.assertIn(repr(name), message)
+                self.assertIn('이 파일 이름으로 tlmgr search --global --file 을 사용해 제공 패키지를 찾으세요', message)
+                self.assertNotIn('→ tlmgr search', message)
+                self.assertNotIn('tlmgr search --global --file /', message)
+                self.assertNotIn('tlmgr search --global --file "', message)
 
     def test_missing_kpsewhich(self):
         self.which.return_value = None
@@ -180,6 +198,9 @@ class TargetListTests(unittest.TestCase):
             (r'\RequirePackage[key=\{]{real}', ('real',)),
             (r'\usepackageX{notpkg}', ()),
             (r'\RequirePackageExtra{notpkg}', ()),
+            (r'\RequirePackageWithOptions{foo}', ('foo',)),
+            (r'\RequirePackageWithOptions[option]{foo}', ('foo',)),
+            (r'\RequirePackageWithOptionsX{bar}', ()),
             ('\\usepackage % comment\n [key=value]\n {alpha, beta}', ('alpha, beta',)),
             ('\\usepackage{al% comment\npha}', ('alpha',)),
             (r'\usepackage{a\}b,c}', (r'a\}b,c',)),
