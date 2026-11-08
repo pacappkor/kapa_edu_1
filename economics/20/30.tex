@@ -1,0 +1,32 @@
+%% kapa: exam=1 round=20 year=2009 period=1 form=A subject=economics subject_ko=경제원론 seq=30 number=70
+%% source: Q-Net 감정평가사 기출문제 (cst00309) artlSeq=5024178 file=extracted/1008/5024178/2009년 제20회 감정평가사 1차시험 기출문제/1교시.hwp
+%% conversion: kordoc 4.24.51 -> tools/gen1.py (auto); review=proofread-sonnet; flags=tikz
+\begin{question}{70}
+다음 그림에 관한 설명으로 옳지 않은 것은? (단, $I_{ 1 }$ 과 $I_{ 2 }$ 는 일반적인 특성을 갖는 무차별곡선이고, 우하향하는 선분은 예산선을 나타낸다.)
+\begin{center}
+\begin{tikzpicture}[font=\small, x=1cm, y=1cm]
+  \draw (0,0) -- (0,5.2);
+  \draw (0,0) -- (5.6,0);
+  \node[above] at (0,5.2) {Y재};
+  \node[below] at (5.3,-0.1) {X재};
+  \node[below left] at (0,0) {0};
+  \draw (0,3.98) -- (4.35,0);
+  \draw plot[smooth] coordinates {(0.69,4.38) (0.76,3.8) (0.84,3.23) (1.27,1.93) (1.97,1.23) (3.49,0.78) (4.94,0.63)};
+  \draw plot[smooth] coordinates {(1.6,4.78) (1.82,4.05) (2.27,2.95) (2.97,2.25) (3.97,1.85) (5.34,1.28)};
+  \fill (0.84,3.23) circle (2.2pt);
+  \fill (3.49,0.78) circle (2.2pt);
+  \node at (0.5,3.05) {A};
+  \node at (3.4,0.45) {B};
+  \node at (0.85,4.1) {$I_1$};
+  \node at (1.9,4.5) {$I_2$};
+\end{tikzpicture}
+\end{center}
+\begin{choices}
+  \item Y재로 표시한 X재의 한계대체율이 B점보다 A점에서 크다.
+  \item 무차별곡선 $I_{ 1 }$ 에서의 상품묶음이 $I_{ 2 }$ 에서의 어떤 상품묶음보다도 효용이 작다.
+  \item 소비자가 A점에서 얻는 총효용의 크기가 B점에서 얻는 총효용의 크기와 같다.
+  \item A점에서 X재의 1원당 한계효용은 Y재의 1원당 한계효용보다 작다.
+  \item B점에서 소비하는 경우, 효용을 극대화하기 위해서는 X재의 소비를 감소시키고 Y재의 소비를 증가시켜야 한다.
+\end{choices}
+\end{question}
+\answer{4}

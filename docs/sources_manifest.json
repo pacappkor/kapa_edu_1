@@ -1,0 +1,458 @@
+[
+ {
+  "exam": 1,
+  "round": 19,
+  "part": "ans",
+  "source": "raw/1206/5024176/2008년 제19회 감정평가사 1차시험 정답.hwp",
+  "staged": "staged/exam1/19/ans.hwp",
+  "sha256": "2ba1f816d014229d3663e99aca9913047cdc796e9bbf770850005c53ae16f887"
+ },
+ {
+  "exam": 1,
+  "round": 19,
+  "part": "p1",
+  "source": "extracted/1008/1001962/2008년 제19회 감정평가사 1차시험 기출문제/1교시.hwp",
+  "staged": "staged/exam1/19/p1.hwp",
+  "sha256": "8589fa49d103b905ace113340bcf39be0e88a19fbbda7334c496a3220adc114e"
+ },
+ {
+  "exam": 1,
+  "round": 19,
+  "part": "p2",
+  "source": "extracted/1008/1001962/2008년 제19회 감정평가사 1차시험 기출문제/2교시.hwp",
+  "staged": "staged/exam1/19/p2.hwp",
+  "sha256": "39a43df0dd1519133ba46b5314e65dbde0c3950750faf327118adf29c8538f4c"
+ },
+ {
+  "exam": 1,
+  "round": 20,
+  "part": "ans",
+  "source": "raw/1206/5024179/2009년 제20회 감정평가사 1차시험 정답.hwp",
+  "staged": "staged/exam1/20/ans.hwp",
+  "sha256": "881910bc7f159c56ea65c78001d689010fbbacb76d6ca438724bb19e28e46922"
+ },
+ {
+  "exam": 1,
+  "round": 20,
+  "part": "p1",
+  "source": "extracted/1008/5024178/2009년 제20회 감정평가사 1차시험 기출문제/1교시.hwp",
+  "staged": "staged/exam1/20/p1.hwp",
+  "sha256": "9f0454529919f2cedb1f037c7e0f2d4f670b9845e098087790973bbcbc655476"
+ },
+ {
+  "exam": 1,
+  "round": 20,
+  "part": "p2",
+  "source": "extracted/1008/5024178/2009년 제20회 감정평가사 1차시험 기출문제/2교시.hwp",
+  "staged": "staged/exam1/20/p2.hwp",
+  "sha256": "6bb5439d3ab4cfb91b8e4e9d4aae5aaa64cb0284950054d1d55719e7ae15b580"
+ },
+ {
+  "exam": 1,
+  "round": 21,
+  "part": "ans",
+  "source": "raw/1206/5024182/2010년 제21회 감정평가사 1차시험 정답.hwp",
+  "staged": "staged/exam1/21/ans.hwp",
+  "sha256": "446b1ed40ed2539b044a1bb70f8beab4e8aec22ed22ff6641bc3bc650fac3900"
+ },
+ {
+  "exam": 1,
+  "round": 21,
+  "part": "p1",
+  "source": "extracted/1008/5024181/2010년 제21회 감정평가사 1차시험 기출문제/1교시.hwp",
+  "staged": "staged/exam1/21/p1.hwp",
+  "sha256": "5c57cdd4159094a784b33e266b216bc2abfadaeb652bc83ec9d433d5f47da781"
+ },
+ {
+  "exam": 1,
+  "round": 21,
+  "part": "p2",
+  "source": "extracted/1008/5024181/2010년 제21회 감정평가사 1차시험 기출문제/2교시.hwp",
+  "staged": "staged/exam1/21/p2.hwp",
+  "sha256": "f739bb1441f5797b3260e6471d2d490322056922f9d56fe06f758ea1d4d2a85f"
+ },
+ {
+  "exam": 1,
+  "round": 22,
+  "part": "ans",
+  "source": "raw/1206/5039975/2011년 제22회 감정평가사 1차시험 정답.hwp",
+  "staged": "staged/exam1/22/ans.hwp",
+  "sha256": "4b87f509f32f730f04b644b78b550880e965fcff79a2032b74fb1f8b56f97f7e"
+ },
+ {
+  "exam": 1,
+  "round": 22,
+  "part": "p1",
+  "source": "extracted/1008/5036790/2011년 제22회 감정평가사 1차시험 기출문제/1교시.hwp",
+  "staged": "staged/exam1/22/p1.hwp",
+  "sha256": "21d9b1d61e403dd84d036e14099d5237920ce0dc8b9e69396380633f5471717a"
+ },
+ {
+  "exam": 1,
+  "round": 22,
+  "part": "p2",
+  "source": "extracted/1008/5036790/2011년 제22회 감정평가사 1차시험 기출문제/2교시.hwp",
+  "staged": "staged/exam1/22/p2.hwp",
+  "sha256": "ee0dbc309c5eb4e6b2dd2cd32569a5736934d1e4c3ebbe52a716533eebc2616c"
+ },
+ {
+  "exam": 1,
+  "round": 23,
+  "part": "ans",
+  "source": "raw/1206/5054197/제23회 감정평가사 제1차 시험 최종정답.hwp",
+  "staged": "staged/exam1/23/ans.hwp",
+  "sha256": "d1bf35e84e7e78488d1cd000f5e27019451db919bd5835e83dec2221c902bfe0"
+ },
+ {
+  "exam": 1,
+  "round": 23,
+  "part": "p1",
+  "source": "raw/1008/5052578/2012년 제23회 감정평가사 제1차시험 기출문제(1교시 A형).pdf",
+  "staged": "staged/exam1/23/p1.pdf",
+  "sha256": "b39a40609f5a2d95cbcd9c281aa8ea45c069fbf3efc947d30b43323176185702"
+ },
+ {
+  "exam": 1,
+  "round": 23,
+  "part": "p2",
+  "source": "raw/1008/5052580/2012년 제23회 감정평가사 제1차시험 기출문제(2교시 A형).pdf",
+  "staged": "staged/exam1/23/p2.pdf",
+  "sha256": "8376e70b4530e02c21fb87e18e5e822ffc494b0b2fcf8b9c15091450d0f4c257"
+ },
+ {
+  "exam": 1,
+  "round": 24,
+  "part": "ans",
+  "source": "raw/1206/5077403/2013년 제24회 감정평가사 1차시험 정답.hwp",
+  "staged": "staged/exam1/24/ans.hwp",
+  "sha256": "34d5006c92d53150dd22230a6fd0b3a56b42d449d36d8af270fc761fef3e1156"
+ },
+ {
+  "exam": 1,
+  "round": 24,
+  "part": "p1",
+  "source": "extracted/1008/5073802/2013년 제24회 감정평가사 1차시험 기출문제/1교시(A형).hwp",
+  "staged": "staged/exam1/24/p1.hwp",
+  "sha256": "d8471d52b43e4102b274a05ae4bb085a8b88b2aa3d6b57bd024c777ac0c5464a"
+ },
+ {
+  "exam": 1,
+  "round": 24,
+  "part": "p2",
+  "source": "extracted/1008/5073802/2013년 제24회 감정평가사 1차시험 기출문제/2교시(A형).hwp",
+  "staged": "staged/exam1/24/p2.hwp",
+  "sha256": "e942f56d858953963175b08561235667ae9452fdf637dc7b3eb213d0460eb7fb"
+ },
+ {
+  "exam": 1,
+  "round": 25,
+  "part": "ans",
+  "source": "raw/1206/5109208/2014년 제25회 감정평가사 1차시험 정답.hwp",
+  "staged": "staged/exam1/25/ans.hwp",
+  "sha256": "53331fa5d256d15d3a0c36374d2893a1ecbe24921840a7b8494b5ea3ce224eb1"
+ },
+ {
+  "exam": 1,
+  "round": 25,
+  "part": "p1",
+  "source": "extracted/1008/5101207/2014년 제25회 감정평가사 1차시험 기출문제/1교시(A형).hwp",
+  "staged": "staged/exam1/25/p1.hwp",
+  "sha256": "fd7d6fa4de07122edb94d1297a4b478a33b894ced57904b8c49a1c961f3c2edc"
+ },
+ {
+  "exam": 1,
+  "round": 25,
+  "part": "p2",
+  "source": "extracted/1008/5101207/2014년 제25회 감정평가사 1차시험 기출문제/2교시(A형).hwp",
+  "staged": "staged/exam1/25/p2.hwp",
+  "sha256": "6b27f7bd6ca045cccf2343ff9dee683394ea4aa7209937e1d08c82205dbaacbf"
+ },
+ {
+  "exam": 1,
+  "round": 26,
+  "part": "ans",
+  "source": "raw/1206/5143612/최종정답내역.pdf",
+  "staged": "staged/exam1/26/ans.pdf",
+  "sha256": "68b08d4f8131cb51741dc293e8aee0228723063c8326dcfb15457428890556cb"
+ },
+ {
+  "exam": 1,
+  "round": 26,
+  "part": "p1",
+  "source": "extracted/1008/5138001/제26회_감정평가사 1차_기출/제26회_감정평가사 1차_기출/1교시_감평_A형.pdf",
+  "staged": "staged/exam1/26/p1.pdf",
+  "sha256": "c2c0fc49df832362be658409dcca8bbffa50de6b32499545155b86cccce36713"
+ },
+ {
+  "exam": 1,
+  "round": 26,
+  "part": "p2",
+  "source": "extracted/1008/5138001/제26회_감정평가사 1차_기출/제26회_감정평가사 1차_기출/2교시_감평_A형.pdf",
+  "staged": "staged/exam1/26/p2.pdf",
+  "sha256": "fa07be614c437e4725eb5b75322851a3820b8891bb9c9376b20bbfb5eff5b1d2"
+ },
+ {
+  "exam": 1,
+  "round": 27,
+  "part": "ans",
+  "source": "raw/1206/5175810/최종정답 현황(교시별 A형B형).pdf",
+  "staged": "staged/exam1/27/ans.pdf",
+  "sha256": "32a5b1d5bf64cb0fde74c9c0a53cb972a97764fddcfe26c7b158f2296b6b8284"
+ },
+ {
+  "exam": 1,
+  "round": 27,
+  "part": "p1",
+  "source": "extracted/1008/5169402/제27회 감정평가사 1차 문제/제27회 감정평가사 1교시문제(A형).pdf",
+  "staged": "staged/exam1/27/p1.pdf",
+  "sha256": "56347cfdf3f8780aa7f8f67aaa149eee250307a6c60aafb323bab39e23d8f9dd"
+ },
+ {
+  "exam": 1,
+  "round": 27,
+  "part": "p2",
+  "source": "extracted/1008/5169402/제27회 감정평가사 1차 문제/제27회 감정평가사 2교시문제(A형).pdf",
+  "staged": "staged/exam1/27/p2.pdf",
+  "sha256": "d588d96cc433bfc87faeaa2d6e79a7636e2cd8fc8255ff830106de3685d82d83"
+ },
+ {
+  "exam": 1,
+  "round": 28,
+  "part": "ans",
+  "source": "raw/1206/5201071/2017년 제28회 감정평가 1차시험 최종정답.pdf",
+  "staged": "staged/exam1/28/ans.pdf",
+  "sha256": "a59909873b8cd0bd6ca58c211146d819c45b2e2f01948c73cd843a28cd1e7351"
+ },
+ {
+  "exam": 1,
+  "round": 28,
+  "part": "p1",
+  "source": "extracted/1008/5199603/2017년 제28회 감정평가사 1차시험 문제지/1교시 A형.pdf",
+  "staged": "staged/exam1/28/p1.pdf",
+  "sha256": "4a11f86591bdd3ed273bf5c13765c4ff7a0997313baaa5e5bb8ad24af64b5287"
+ },
+ {
+  "exam": 1,
+  "round": 28,
+  "part": "p2",
+  "source": "extracted/1008/5199603/2017년 제28회 감정평가사 1차시험 문제지/2교시 A형.pdf",
+  "staged": "staged/exam1/28/p2.pdf",
+  "sha256": "f8b7a634a35812ab27837ffb44d6902317399a6abcd3d2d7c2a9a247dcf406eb"
+ },
+ {
+  "exam": 1,
+  "round": 29,
+  "part": "ans",
+  "source": "raw/1206/5202971/2018년 제29회 감정평가사 1차시험 최종 정답.hwp",
+  "staged": "staged/exam1/29/ans.hwp",
+  "sha256": "1a67082b336e263b4b22873696be2d7e949027bbba4e6a5bcb9fc4d826ab2595"
+ },
+ {
+  "exam": 1,
+  "round": 29,
+  "part": "p1",
+  "source": "extracted/1008/5202808/2018년 제29회 감정평가사 1차시험 기출문제/2018년 제29회 감정평가사 1차시험 기출문제/1교시 A형.pdf",
+  "staged": "staged/exam1/29/p1.pdf",
+  "sha256": "023be48df5bf6d9bde1434e33b2c8ca78f4e711456639b5d3259e4a462719ec7"
+ },
+ {
+  "exam": 1,
+  "round": 29,
+  "part": "p2",
+  "source": "extracted/1008/5202808/2018년 제29회 감정평가사 1차시험 기출문제/2018년 제29회 감정평가사 1차시험 기출문제/2교시 A형.pdf",
+  "staged": "staged/exam1/29/p2.pdf",
+  "sha256": "18dd374b323cdc8aff8a3f7273b04eadf126fb05d7a621c904b4d9d10a23aadc"
+ },
+ {
+  "exam": 1,
+  "round": 30,
+  "part": "ans",
+  "source": "raw/1206/5205605/2019년 제30회 감정평가사 1차시험 최종 정답.hwp",
+  "staged": "staged/exam1/30/ans.hwp",
+  "sha256": "e9cb03f1f27da76264622a170a772919b3657a58a7c4d7471765722c5abb51dd"
+ },
+ {
+  "exam": 1,
+  "round": 30,
+  "part": "p1",
+  "source": "extracted/1008/5205205/2019년 제30회 감정평가사 1차시험 문제지/2019년 제30회 감정평가사 1차시험 문제지/2019년도 제30회 감정평가사 1차 1교시 A형.hwp",
+  "staged": "staged/exam1/30/p1.hwp",
+  "sha256": "55e9d17758fe868cd716e015564776fb4de172ad7fddd7c0821fd1792417ffa2"
+ },
+ {
+  "exam": 1,
+  "round": 30,
+  "part": "p2",
+  "source": "extracted/1008/5205205/2019년 제30회 감정평가사 1차시험 문제지/2019년 제30회 감정평가사 1차시험 문제지/2019년도 제30회 감정평가사 1차 2교시 A형.hwp",
+  "staged": "staged/exam1/30/p2.hwp",
+  "sha256": "3d1651dfcb43cc4864ddd0c16a653aeb20aeaccbaa307719e966e6d66414dfdc"
+ },
+ {
+  "exam": 1,
+  "round": 31,
+  "part": "ans",
+  "source": "raw/1206/5207498/최종 확정답안(제31회 감정평가사 1차).hwp",
+  "staged": "staged/exam1/31/ans.hwp",
+  "sha256": "9913d09a7d031693f0edd2db381c41e35843182bc45e52d66f7b553a27322048"
+ },
+ {
+  "exam": 1,
+  "round": 31,
+  "part": "p1",
+  "source": "extracted/1008/5207219/A형/A형/2020년도 제31회 감정평가사 1차 시험_1교시_A형.pdf",
+  "staged": "staged/exam1/31/p1.pdf",
+  "sha256": "aaa432819df2146ed78a92e0adaeff9bf086fa7b8db595bb3c6d0883805009bd"
+ },
+ {
+  "exam": 1,
+  "round": 31,
+  "part": "p2",
+  "source": "extracted/1008/5207219/A형/A형/2020년도 제31회 감정평가사 1차 시험_2교시_A형.pdf",
+  "staged": "staged/exam1/31/p2.pdf",
+  "sha256": "ef27f90ccfb0e4d57dda37335cd99bea211cc3bacc4a821cb23a8101f1de00a3"
+ },
+ {
+  "exam": 1,
+  "round": 32,
+  "part": "ans",
+  "source": "raw/1206/5208994/최종 확정답안(제32회 감정평가사 1차).hwp",
+  "staged": "staged/exam1/32/ans.hwp",
+  "sha256": "4b8543ea2ca814286cac88ce2fe62db2c7f351158fec8dc17b1cfc1d58af7a1e"
+ },
+ {
+  "exam": 1,
+  "round": 32,
+  "part": "p1",
+  "source": "extracted/1008/5208397/A형/2021년도 제32회 감정평가사 1차 1교시 A형.pdf",
+  "staged": "staged/exam1/32/p1.pdf",
+  "sha256": "8805cb6027a5b4b8cc6f0a819ae5cbcc779403902dc739087f0824d779625325"
+ },
+ {
+  "exam": 1,
+  "round": 32,
+  "part": "p2",
+  "source": "extracted/1008/5208397/A형/2021년도 제32회 감정평가사 1차 2교시 A형.pdf",
+  "staged": "staged/exam1/32/p2.pdf",
+  "sha256": "0b396403793a88e5dfbb5bbff09d7768b5a905230edff098032d922c98195034"
+ },
+ {
+  "exam": 1,
+  "round": 33,
+  "part": "ans",
+  "source": "raw/1206/5210949/2022년 제33회 감정평가사 1차 국가자격시험 최종 정답.hwp",
+  "staged": "staged/exam1/33/ans.hwp",
+  "sha256": "1771f6f86598f66b5d1bec622e9d0dab1697054ba90a7c9439566dad5d71651f"
+ },
+ {
+  "exam": 1,
+  "round": 33,
+  "part": "p1",
+  "source": "raw/1008/5209997/2022년도 제33회 감정평가사 1차시험 1교시(민법,경제학,부동산학).pdf",
+  "staged": "staged/exam1/33/p1.pdf",
+  "sha256": "0d696ea2605745de01339be1731bb08307d97079933f17ed170cac02ddfe2850"
+ },
+ {
+  "exam": 1,
+  "round": 33,
+  "part": "p2",
+  "source": "raw/1008/5209997/2022년도 제33회 감정평가사 1차시험 2교시(감정평가 관계법규, 회계학).pdf",
+  "staged": "staged/exam1/33/p2.pdf",
+  "sha256": "9788758bff58bd4f21f03767434ed9862e66d93b3daaef31db7ed14a932558f2"
+ },
+ {
+  "exam": 1,
+  "round": 34,
+  "part": "ans",
+  "source": "raw/1206/5212249/제34회 감정평가사 1차시험 최종정답내역.hwp",
+  "staged": "staged/exam1/34/ans.hwp",
+  "sha256": "ee373f7af0f6b198eeb7738dcce78aab094c8e45b3a842b55dbe9cf14edf1ac8"
+ },
+ {
+  "exam": 1,
+  "round": 34,
+  "part": "p1",
+  "source": "raw/1008/5211789/2023년도 제34회 감정평가사 1차시험 1교시.pdf",
+  "staged": "staged/exam1/34/p1.pdf",
+  "sha256": "83629cfff6bdea29790f33e2843d443decf2aa73f9736bebf66afaad1d322177"
+ },
+ {
+  "exam": 1,
+  "round": 34,
+  "part": "p2",
+  "source": "raw/1008/5211789/2023년도 제34회 감정평가사 1차시험 2교시.pdf",
+  "staged": "staged/exam1/34/p2.pdf",
+  "sha256": "2343da0b8b181777d330382907e81f824328a67319b94eee97d7a8e4f20f7a82"
+ },
+ {
+  "exam": 1,
+  "round": 35,
+  "part": "ans",
+  "source": "raw/1206/5213371/[붙임2]제35회 감정평가사 1차 시험 최종정답.hwp",
+  "staged": "staged/exam1/35/ans.hwp",
+  "sha256": "9097d7720f88191870c73cc5b1e7cfbe94bcbe85a74a9ee0a84c2c33d22e4f97"
+ },
+ {
+  "exam": 1,
+  "round": 35,
+  "part": "p1",
+  "source": "raw/1008/5213229/1교시 문제지 원본.pdf",
+  "staged": "staged/exam1/35/p1.pdf",
+  "sha256": "d7d189a3d34a97a96e13452c35344bfad5dadf048e46faabe6a24ca843196f80"
+ },
+ {
+  "exam": 1,
+  "round": 35,
+  "part": "p2",
+  "source": "raw/1008/5213229/2교시 문제지 원본.pdf",
+  "staged": "staged/exam1/35/p2.pdf",
+  "sha256": "f8d1d74d255b9ecb103ebd08a7cb648db56c10595850c68b91fef4f38c088e1a"
+ },
+ {
+  "exam": 1,
+  "round": 36,
+  "part": "ans",
+  "source": "raw/1206/5246129/[붙임2] 제36회 감정평가사 1차 최종 정답.hwp",
+  "staged": "staged/exam1/36/ans.hwp",
+  "sha256": "527748ba443c6aff63bafc00fda2873c2f07696e424570f96ac4309f8f419719"
+ },
+ {
+  "exam": 1,
+  "round": 36,
+  "part": "p1",
+  "source": "raw/1008/5231525/2025년 제36회 감정평가사 1차시험 1교시 문제지 원본.pdf",
+  "staged": "staged/exam1/36/p1.pdf",
+  "sha256": "11578508ad4f819a02a52b246ff5990a31ff283db1d6aab4d6d0e1f5cbcc06e8"
+ },
+ {
+  "exam": 1,
+  "round": 36,
+  "part": "p2",
+  "source": "raw/1008/5231525/2025년 제36회 감정평가사 1차시험 2교시 문제지 원본.pdf",
+  "staged": "staged/exam1/36/p2.pdf",
+  "sha256": "90aa88ff99e69e77012a5b7e3fdae6dd34b219fcf2db9626b50536a58978da33"
+ },
+ {
+  "exam": 1,
+  "round": 37,
+  "part": "ans",
+  "source": "raw/1206/5262739/[붙임] 감정평가사 1차 최종 정답.hwp",
+  "staged": "staged/exam1/37/ans.hwp",
+  "sha256": "a92dfb8ea131ab6f6a722ee17afdae325295c6f950adfab996f47d50da7250e2"
+ },
+ {
+  "exam": 1,
+  "round": 37,
+  "part": "p1",
+  "source": "raw/1008/5258924/2026년 제37회 감정평가사 1차 1교시.pdf",
+  "staged": "staged/exam1/37/p1.pdf",
+  "sha256": "fb01940b7eee49659864c8d0e752e516e7cd0d76c8ea8d964d78160adde89678"
+ },
+ {
+  "exam": 1,
+  "round": 37,
+  "part": "p2",
+  "source": "raw/1008/5258924/2026년 제37회 감정평가사 1차 2교시.pdf",
+  "staged": "staged/exam1/37/p2.pdf",
+  "sha256": "5ac4a24525415efc3f82fabc17b3609322c9ef75cf8e5e0e51ea41e09fea82c1"
+ }
+]

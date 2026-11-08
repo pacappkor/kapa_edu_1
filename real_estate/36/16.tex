@@ -1,0 +1,39 @@
+%% kapa: exam=1 round=36 year=2025 period=1 form=A subject=real_estate subject_ko=부동산학원론 seq=16 number=96
+%% source: Q-Net 감정평가사 기출문제 (cst00309) artlSeq=5231525 file=raw/1008/5231525/2025년 제36회 감정평가사 1차시험 1교시 문제지 원본.pdf
+%% conversion: kordoc 4.24.51 -> tools/gen1.py (auto); review=proofread-sonnet; flags=tikz
+\begin{question}{96}
+다음은 일정기간 부동산자산과 금융자산의 투자 자료이다. 이 경우 합리적인 투자 자가 가장 선호할 자산은? (단, 주어진 자료에 한함)
+\begin{center}
+{\small\renewcommand{\arraystretch}{1.3}\begin{tabular}{|c|c|c|c|c|c|}\hline
+자산구분 & 토지 & 아파트 & 오피스 & 채권 & 주식  \\ \hline
+수익률 & 0.82 \% & 0.95 \% & 2.23 \% & 0.99 \% & 1.90 \%  \\ \hline
+표준편차 & 1.17 \% & 2.19 \% & 1.05 \% & 1.05 \% & 8.11 \%  \\ \hline
+\end{tabular}}
+\end{center}
+\begin{center}
+\begin{tikzpicture}[x=0.72cm,y=1.75cm,font=\scriptsize]
+\foreach \x in {1,...,9} \draw[gray!70,line width=0.4pt] (\x,0) -- (\x,2.6);
+\foreach \y in {0.5,1.0,1.5,2.0,2.5} \draw[gray!70,line width=0.4pt] (0,\y) -- (9,\y);
+\draw[line width=0.9pt] (0,0) -- (0,2.75);
+\draw[line width=0.9pt] (0,0) -- (9.8,0);
+\foreach \x in {1,...,9} \node[below] at (\x,-0.02) {\x\%};
+\foreach \y/\l in {0.5/0.5,1.0/1.0,1.5/1.5,2.0/2.0,2.5/2.5} \node[left] at (-0.05,\y) {\l\%};
+\node at (0.2,2.9) {\large $E(r)$};
+\node at (10.2,0) {\large $\sigma$};
+\fill (1.05,2.23) circle (1.4pt) node[above,xshift=2pt,yshift=1pt] {오피스};
+\fill (8.11,1.90) circle (1.4pt) node[above] {주식};
+\fill (1.05,0.99) circle (1.4pt) node[above right,xshift=-3pt,yshift=-1pt] {채권};
+\fill (1.17,0.82) circle (1.4pt) node[below,xshift=-1pt] {토지};
+\fill (2.19,0.95) circle (1.4pt) node[below right,xshift=-2pt,yshift=2pt] {아파트};
+\node at (4.8,-0.45) {표 및 그래프 : 자산별 수익률과 위험};
+\end{tikzpicture}
+\end{center}
+\begin{choices}
+  \item 오피스
+  \item 채권
+  \item 아파트
+  \item 주식
+  \item 토지
+\end{choices}
+\end{question}
+\answer{1}

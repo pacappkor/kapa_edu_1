@@ -1,0 +1,12 @@
+{
+  "exam": "감정평가사 제1차 시험",
+  "note": "폴더명(folder) ↔ 과목명 대응표. aliases 는 회차별로 시험지에 인쇄된 과목명 변형이며, 각 문항 파일의 '%% kapa:' 줄 subject_ko 에 원문 과목명이 그대로 기록된다.",
+  "subjects": [
+    {"folder": "civil_law",     "name_ko": "민법",             "aliases": ["민법"],                         "rounds": "19-37"},
+    {"folder": "economics",     "name_ko": "경제학원론",       "aliases": ["경제원론", "경제학원론"],       "rounds": "19-37"},
+    {"folder": "real_estate",   "name_ko": "부동산학원론",     "aliases": ["부동산학원론"],                 "rounds": "27-37"},
+    {"folder": "appraisal_law", "name_ko": "감정평가관계법규", "aliases": ["부동산관계법규", "감정평가관계법규"], "rounds": "19-37"},
+    {"folder": "accounting",    "name_ko": "회계학",           "aliases": ["회계학"],                       "rounds": "19-37"},
+    {"folder": "english",       "name_ko": "영어",             "aliases": ["영어"],                         "rounds": "19"}
+  ]
+}

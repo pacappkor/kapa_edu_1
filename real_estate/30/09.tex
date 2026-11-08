@@ -1,0 +1,37 @@
+%% kapa: exam=1 round=30 year=2019 period=1 form=A subject=real_estate subject_ko=부동산학원론 seq=9 number=89
+%% source: Q-Net 감정평가사 기출문제 (cst00309) artlSeq=5205205 file=extracted/1008/5205205/2019년 제30회 감정평가사 1차시험 문제지/2019년 제30회 감정평가사 1차시험 문제지/2019년도 제30회 감정평가사 1차 1교시 A형.hwp
+%% conversion: kordoc 4.24.51 -> tools/gen1.py (auto); review=proofread-sonnet; flags=tikz
+\begin{question}{89}
+다음의 그림은 포트폴리오 분석을 위해 기대수익률과 위험이 다른 개별 자산1과 자산2로 포트폴리오를 구성하여, 포트폴리오 내의 상관계수별 자산비중에 따른 위험과 수익 궤적을 나타낸 것이다. 이에 관한 설명으로 옳은 것은? (단, 주어진 조건에 한함)
+\begin{center}
+\begin{tikzpicture}[x=0.55cm,y=0.55cm,font=\small]
+  \draw[->] (0,0) -- (0,6.9) node[above] {기대수익률};
+  \draw[->] (0,0) -- (11.4,0) node[below right] {표준편차};
+  \node[below left] at (0,0) {0};
+  \coordinate (B) at (0,3);
+  \coordinate (P1) at (3.1,1.5);
+  \coordinate (P2) at (9.6,5.45);
+  \draw[dashed] (0,1.5) node[left] {A} -- (P1) -- (3.1,0) node[below] {D};
+  \draw[dashed] (0,5.45) node[left] {C} -- (P2) -- (9.6,0) node[below] {E};
+  \node[left] at (B) {B};
+  \draw (B) -- (P2);
+  \draw (B) -- (P1);
+  \draw (P1) -- (P2);
+  \draw (P1) .. controls (2.2,2.2) and (4.6,3.6) .. (P2);
+  \fill (P1) circle (2.5pt) (P2) circle (2.5pt);
+  \node[below] at (3.6,1.4) {\textbf{개별자산1}};
+  \node[above left] at (9.9,5.5) {\textbf{개별자산2}};
+  \node at (1.5,3.45) {(가)};
+  \node at (3.7,3.15) {(나)};
+  \node at (6.2,3.0) {(다)};
+\end{tikzpicture}
+\end{center}
+\begin{choices}
+  \item 두 개별자산간의 상관계수가 1인 경우에는 비체계적 위험을 완전히 제거할 수 있다.
+  \item 두 개별자산간의 상관계수가 -1인 경우에는 체계적 위험을 완전히 제거할 수 있다.
+  \item 두 개별자산간의 상관계수가 0인 경우의 위험과 수익 궤적을 나타낸 선은 (다)이다.
+  \item 두 개별자산간의 상관계수가 1인 경우에는 체계적 위험을 완전히 제거할 수 있다.
+  \item 두 개별자산간의 상관계수가 -1인 경우의 위험과 수익 궤적을 나타낸 선은 (가)이다.
+\end{choices}
+\end{question}
+\answer{5}
