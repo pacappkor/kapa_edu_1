@@ -24,9 +24,9 @@ HWP 는 두 도구를 함께 씁니다: **kordoc**(본문·수식 추출, 수식
 
 | 원본 형식 | 도구 | 비고 |
 |---|---|---|
-| HWP (제19~22, 24, 25, 30회 문제 / 대부분의 정답) | kordoc (`npx kordoc file.hwp -o out.md`) | 수식은 `$…$` LaTeX 로 나옴. 품질 높음 |
-| 텍스트 PDF (제23, 26~29, 31, 35~37회) | kordoc `--no-tables` | 기본 모드는 2단 시험지에서 본문을 누락할 수 있음(제23회 확인). 표 구조는 사라지므로 원본 대조로 재구성 |
-| 스캔 PDF (제32~34회) | kordoc `--no-tables --ocr` | OCR 오류(ㄱ→7, ㄷ→2, 한자 누락, 띄어쓰기) 많음 → **전수 교정 필수** |
+| HWP (제19–22, 24, 25, 30회 문제 / 대부분의 정답) | kordoc (`npx kordoc file.hwp -o out.md`) | 수식은 `$…$` LaTeX 로 나옴. 품질 높음 |
+| 텍스트 PDF (제23, 26–29, 31, 35–37회) | kordoc `--no-tables` | 기본 모드는 2단 시험지에서 본문을 누락할 수 있음(제23회 확인). 표 구조는 사라지므로 원본 대조로 재구성 |
+| 스캔 PDF (제32–34회) | kordoc `--no-tables --ocr` | OCR 오류(ㄱ→7, ㄷ→2, 한자 누락, 띄어쓰기) 많음 → **전수 교정 필수** |
 | 정답표 | HWP 안의 그림(BMP) / 스캔 PDF | 사람·비전 모델 2인 독립 판독 후 대조 |
 
 - 문항 분리: `tools/pipeline/split1.py <md 폴더> <회차> <out.json>` — 과목 머리글·번호 연속성으로 분리, 누락 번호는 `gap_before` 로 기록.
@@ -56,6 +56,7 @@ HWP 는 두 도구를 함께 씁니다: **kordoc**(본문·수식 추출, 수식
 7. HWP 회차는 rhwp 렌더링이 일부 글자(여는 따옴표 ‘ “ 등)를 빠뜨리거나 줄을 겹쳐 그리는 일이 있습니다. **렌더링에만 없는 글자는 원문 근거가 아닙니다** — 글자는 HWP 텍스트(rhwp `export-text`)로, 구조(상자·표·배치)는 이미지로 확인합니다.
 
 ## 4. 기여(PR) 절차
+- 문서(Markdown)에서 범위는 "–"(en dash)로 씁니다(예: 제19–37회). `~` 는 GitHub 에서 취소선이 되므로 코드 스팬 밖에서 쓰지 않습니다(`validate.py` 가 검사).
 1. `git switch -c <type>/<요약>` (예: `fix/accounting-26-tables`, `data/round-38`)
 2. 커밋 메시지: `<과목>/<회차>: <무엇을>` (예: `accounting/26: 41~45번 선택지 표 재구성`)
 3. PR 본문: 범위(회차·과목·문항), 대조한 원본, 검증 결과(validate/build), 남은 문제와 관련 이슈.
@@ -87,9 +88,9 @@ HWP 는 두 도구를 함께 씁니다: **kordoc**(본문·수식 추출, 수식
 | `table` | HWP 표를 자동 변환함. 병합 칸·정렬 확인 |
 | `figure` | 원본 그림을 추출해 포함함. 잘림·누락 확인. 스캔본은 페이지 일부일 수 있음 |
 | `shared-prefix` / `post-content-moved-forward` | 앞 문항 뒤에 있던 지문·지시문을 이 문항 앞에 붙임. 귀속이 맞는지 확인 |
-| `choices-reordered` | 2단 배치 선택지를 ①~⑤ 순서로 재정렬함 |
+| `choices-reordered` | 2단 배치 선택지를 ①–⑤ 순서로 재정렬함 |
 | `wrapped-choice-line` | 줄바꿈된 선택지 줄을 합침 |
-| `inline-choice-markers` | ①~⑤ 가 문두(밑줄 어구 등) 안에 있는 유형. 선택지 목록 없음이 정상 |
+| `inline-choice-markers` | ①–⑤ 가 문두(밑줄 어구 등) 안에 있는 유형. 선택지 목록 없음이 정상 |
 | `missing-choice:…` / `no-choices` | 선택지 일부를 찾지 못함 → 원본 대조 필수 |
 | `content-after-choices-unassigned` | 선택지 뒤 내용을 귀속하지 못함(보통 시험지 끝 안내문) |
 | `dup-choice-marker` | 같은 선택지 기호가 두 번 나옴 → 확인 |

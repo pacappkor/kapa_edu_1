@@ -33,6 +33,24 @@ def expected_answer(rows, block, seq):
     i = block * 40 + seq - 1
     return rows[i] if i < len(rows) else None
 
+def markdown_tilde_errors():
+    """Markdown 본문의 물결표(~)는 GitHub 에서 두 개가 한 줄에 있으면 취소선(~텍스트~)으로 렌더링된다.
+    범위는 '–'(en dash)로 쓴다. 코드 스팬(`...`)과 코드 블록 안은 검사하지 않는다."""
+    out = []
+    for md in sorted(ROOT.rglob('*.md')):
+        if {'.git', 'build'} & set(md.relative_to(ROOT).parts):
+            continue
+        fence = False
+        for i, line in enumerate(md.read_text(encoding='utf-8').split('\n'), 1):
+            if re.match(r'\s*(```|~~~)', line):
+                fence = not fence; continue
+            if fence:
+                continue
+            prose = re.sub(r'`+[^`]*`+', '', line)
+            if '~' in prose:
+                out.append(f'{md.relative_to(ROOT).as_posix()}:{i}: 범위 물결표 "~" 대신 "–" 를 쓴다(GitHub 취소선 방지)')
+    return out
+
 def main():
     sys.stdout.reconfigure(encoding='utf-8')
     write = '--write-status' in sys.argv
@@ -93,6 +111,7 @@ def main():
             table.append(dict(subject=sd.name, round=rnd, files=len(files), missing=missing, pending=st['pending'],
                               proofread=st['proofread'], flags=dict(flags), reviewflags=rflags, answer_mismatch=ans_bad, choice_count_warn=nchoice_bad))
             if missing: errors.append(f'{sd.name}/{rnd}: missing questions {missing}')
+    errors += markdown_tilde_errors()
     print(f'errors: {len(errors)}  warnings: {len(warns)}')
     for e in errors[:50]: print('ERROR', e)
     for w in warns[:30]: print('WARN ', w)
